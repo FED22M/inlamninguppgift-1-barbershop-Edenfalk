@@ -1,0 +1,39 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+.container-1 {
+    background-color: beige;
+}
+
+li {
+    list-style-type: none;
+}
+.navbar {
+    display: flex;
+    background-color: rgb(20, 27, 37);
+    color:  rgb(191, 146, 91) ;
+}
+
+.title {
+    display: inline;
+    margin-top: 0;
+    
+}
+.navbar-links ul {
+   margin-top: 0;
+}
+.container-2 {
+    display: flex;
+    flex-direction: column;
+}
+.styles-1 {
+    background-color: rgb(191, 146, 91);
+    text-align: center;
+    
+}
+.styles-2 {
+    background-color: rgb(240, 183, 114);
+    text-align: center;
+}
