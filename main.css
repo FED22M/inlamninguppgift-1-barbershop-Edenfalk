@@ -8,9 +8,38 @@ body {
 h1, h2, h3, h4 {
     font-family: 'barlow';
 }
+.bannertext {
+    padding-left: 1rem;
+}
+.xltext {
+    color: white;
+    font-size: 2rem;
+    font-style: bold;
+}
+.transparent {
+    -webkit-text-stroke: 0.7px white;
+    -webkit-text-fill-color: transparent;
+}
+.smalltext {
+    color: white;
+    line-height: 0.5;
+    font-size: 14px;
+}
+.textbottom {
+    padding-bottom: 4rem;
+}
+.bannerbox {
+    color: rgb(191, 146, 91);
+    border: 1.5px solid rgb(191, 146, 91);
+    width: 15rem; 
+    text-align: center;
+    overflow: hidden;
+}
 h2 {
-    padding-top: 20rem;
+    padding-top: 10rem;
+    padding-bottom: 0.5rem;
     margin: 0;
+    color: rgb(191, 146, 91);
 }
 .circle {
     width: 10rem;
@@ -29,10 +58,11 @@ h3 {
     margin-top: 5rem;
 }
 
+
 .banner {
     width: 100%;
     height: 100vh;
-    background-image:url(barber.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) , url(barber.jpg);
     background-position: center;
     background-size: cover;
 }
@@ -48,22 +78,29 @@ h3 {
     background-color: rgb(191, 146, 91);
     text-align: center;
     position: relative;
+    color: white;
 }
 .styles-2 {
     background-color: rgb(240, 183, 114);
     text-align: center;
     position: relative;
+    color: white;
 }
 .container-3 {
     display: flex;
     flex-direction: column;
+    padding: 0.5REM;
 }
+
+
 .about-img {
+    display: block;
     max-width: 100%;  
 }
 
 .box {
     padding: 2px;
+    text-align: center;
     box-sizing: border-box;
     width: 30%;
     height: 100px;
@@ -85,6 +122,8 @@ h3 {
 .footer {
     background-color: black;
     color: white;
+    display: flex;
+    flex-direction: column;
 }
 
 ul{
@@ -93,8 +132,28 @@ ul{
 a {
     text-decoration: none;
     color: white;
-    
 }
+.footrow {
+    flex-direction: column;
+
+}
+.wrapper {
+    display: flex;
+}
+.social-links {
+    display: flex;
+    width: 50px;
+    height: 50px;
+    background-color: rgb(191, 146, 91);
+    align-items: center;
+    border-radius: 100%;
+    margin: 5px;
+}
+.social-links i {
+    margin: auto;
+}
+
+
 h5 {
     padding-left: 3rem;
 }
@@ -106,14 +165,19 @@ h5 {
     }
     .footrow{
         display: flex;
+        flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-around
     }
     .banner {
         height: 100%;
     }
+    h2 {
+        padding-bottom: 20rem;
+    }
     .container-3 {
-        flex-direction: row;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
     }
     .sidetext {
         display: flex;
@@ -121,7 +185,7 @@ h5 {
         padding-left: 5rem;
     }
     .about-img {
-        max-width: 100%;
+        max-width: 80%;
     }
 }
 
