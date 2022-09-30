@@ -5,8 +5,11 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
-h1, h2, h3, h4, .largetext, .xltext, .transparent .box {
+h1, h2, h3, h4, h5, .largetext, .xltext, .transparent, .box {
     font-family: 'Barlow Semi Condensed', sans-serif;
+}
+h4 {
+    color: rgb(191, 146, 91);
 }
 
 nav {
@@ -166,28 +169,40 @@ h3 {
 .box {
     display: flex;
     flex-direction: row;
+    align-items: center;
     padding: 2px;
-    text-align: center;
     box-sizing: border-box;
     width: 170px;
-    height: 70px;
+    height: 120px;
     background-color: rgb(191, 146, 91);
 } 
  .calender {
     display: flex;
     color: white;
-    width: 50px;
-    height: 50px;
-    background-color: rgb(4, 4, 3);
     align-items: center;
+    width: 200px;
+    height: 70px;
+    background-color: rgb(4, 4, 3);
     border-radius: 100%;
     margin: 5px;
 } 
 
+.calender-number{
+    color: white;
+    font-size: 28px;
+}
+
+
  .calender i {
     margin: auto;
-    font-size: 26px;
+    font-size: 36px;
 }
+
+ .right-col-calender { 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+} 
 
 .revsection {
     background-color: rgb(235, 232, 222);
