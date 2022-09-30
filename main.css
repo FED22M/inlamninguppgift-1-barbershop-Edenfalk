@@ -262,9 +262,26 @@ h5 {
 }
 
 @media screen and (min-width:768px) {
-    nav h1 {
+
+    h1 {
         display: flex;
         justify-content: center;
+    }
+
+    nav #menu-button {
+        display: none;
+    }
+
+    nav button + .menu {
+        display: flex;
+        justify-content: flex-start;
+        visibility: visible;
+        margin-top: 0;
+        opacity: 0.7;
+    }
+
+    nav li {
+        margin-right: 30px;
     }
 
     .header-content {
