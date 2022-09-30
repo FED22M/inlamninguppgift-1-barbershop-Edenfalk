@@ -5,7 +5,7 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
-h1, h2, h3, h4, h5, .largetext, .xltext, .transparent, .box {
+h1, h2, h3, h4, h5, .largetext, .xltext, .transparent, .calender-text, .bannerbox {
     font-family: 'Barlow Semi Condensed', sans-serif;
 }
 h4 {
@@ -65,15 +65,19 @@ button + .menu {
     align-items: center;
   }
 
+  .banner {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) , url(barber.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
 h1 {
     color: white;
     margin-top: 0;
     font-size: 2rem;
 }
-
-/* .bannertext {
-    padding-left: 10rem;
-} */
 
 .xltext {
     color: white;
@@ -103,6 +107,8 @@ h1 {
     border: 1.5px solid rgb(191, 146, 91);
     width: 200px; 
     text-align: center;
+    padding: 0.5rem;
+    margin-left: 5px;
 }
 
 h2 {
@@ -129,14 +135,6 @@ h2 {
 
 h3 {
     margin-top: 5rem;
-}
-
-.banner {
-    width: 100%;
-    height: 100vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) , url(barber.jpg);
-    background-position: center;
-    background-size: cover;
 }
 
 .container-2 {
@@ -175,46 +173,82 @@ h3 {
 
 .box {
     display: flex;
-    flex-direction: row;
     align-items: center;
     padding: 2px;
     box-sizing: border-box;
-    width: 170px;
+    width: 300px;
     height: 120px;
     background-color: rgb(191, 146, 91);
 } 
  .calender {
     display: flex;
     color: white;
-    align-items: center;
-    width: 200px;
+    width: 70px;
     height: 70px;
     background-color: rgb(4, 4, 3);
     border-radius: 100%;
-    margin: 5px;
+    margin-left: 1em;
 } 
 
-.calender-number{
-    color: white;
-    font-size: 28px;
-}
-
-
- .calender i {
+.calender i {
     margin: auto;
     font-size: 36px;
 }
 
- .right-col-calender { 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.calender-text {
+    color: white;
+    text-align: center;
+    margin-left: 15px;
+}
+
+.calender-text p span { 
+    display: block;
+    text-align: center;
 } 
+
 
 .revsection {
     background-color: rgb(235, 232, 222);
     padding: 2px;
 }
+h4 {
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+.rev {
+    background-color: white;
+    width: 80%;
+    height: 200px;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.revhead {
+    text-align: center;
+}
+
+.largetext {
+    font-size: 2em;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+.qoute {
+    width: 30px;
+    height: 30px;
+    background-color: rgb(191, 146, 91);
+    align-items: center;
+    border-radius: 100%;
+    margin: 5px;
+    position: absolute;
+    top: -1.2rem;
+    margin-left: 15px;
+}
+
+.fa-quote-left {
+    color: white;
+}
+
 
 .container-4 {
     display: flex;
@@ -292,7 +326,6 @@ h5 {
     }
 
     .header-content {
-        left: 49%;
         width: 450px;
     }
 
@@ -311,16 +344,16 @@ h5 {
         height: 95vh;
     }
 
-    h2 {
+    h2, .xltext {
         padding-left: 40%;
     }
 
     .smalltext {
-        padding-left: 60%;
+        padding-left: 45%;
     }
 
-    .xltext{
-        padding-left: 40%;
+    .bannerbox {
+        margin-left: 40%;
     }
 
     .container-3 {
@@ -336,6 +369,18 @@ h5 {
 
     .about-img {
         max-width: 80%;
+    }
+    .container-4 {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+        justify-content: space-evenly;
+    }
+
+    .rev {
+        width: 350px;
+
     }
 }
 
