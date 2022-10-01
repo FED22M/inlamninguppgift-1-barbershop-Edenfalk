@@ -5,7 +5,7 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
-h1, h2, h3, h4, h5, .largetext, .xltext, .transparent, .calender-text, .bannerbox {
+h1, h2, h3, h4, h5, .largetext, .xltext, .transparent, .calender-text, .bannerbox, .right-content {
     font-family: 'Barlow Semi Condensed', sans-serif;
 }
 h4 {
@@ -16,7 +16,6 @@ nav {
     display: grid;
     grid-template-columns: 1fr 1fr;
     background: rgba(0, 0, 0, 0.7);
-    padding: 0 20px;
     position: fixed;
     top: 0;
     width: 100%;
@@ -77,6 +76,7 @@ h1 {
     color: white;
     margin-top: 0;
     font-size: 2rem;
+    padding-left: 5px;
 }
 
 .xltext {
@@ -219,7 +219,7 @@ h4 {
 .rev {
     background-color: white;
     width: 80%;
-    height: 200px;
+    /* height: 200px; */
     margin-bottom: 50px;
     position: relative;
 }
@@ -257,6 +257,46 @@ h4 {
     align-items: center;
 }
 
+.rev-content {
+    display: flex;
+    justify-content: left;
+    margin-left: 20px;
+}
+
+.rev-text {
+    padding: 10px 20px;
+}
+
+.fa-star {
+    font-size: 0.5rem;
+    color: rgb(191, 146, 91);
+    padding-right: 5px;
+}
+
+.name {
+    font-size: 1.2rem;
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+
+.customer {
+    color: rgb(191, 146, 91);
+    margin-top: 0;
+    font-size: 0.7rem;
+}
+
+
+.customer-img {
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+}
+
+.right-content {
+    padding-left: 20px;
+    text-align: left;
+
+}
 
 .footer {
     background-color: black;
@@ -323,6 +363,7 @@ h5 {
 
     nav li {
         margin-right: 30px;
+        padding-top: 10px;
     }
 
     .header-content {
